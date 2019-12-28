@@ -1,0 +1,20 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "Cypress Automation",
+  "main": "index.js",
+  "scripts": {
+    "openTestRunner": "node_modules/.bin/cypress open",
+    "runTCWithTestRunner": "node_modules/.bin/cypress run --headed --browser chrome",
+    "runTCWOTestRunner": "node_modules/.bin/cypress run",
+    "runTCWithDashBoard": "node_modules/.bin/cypress run --headed --record --key e222aeb4-580b-498b-b717-a205f7f36616",
+    "runTCWithMochaAwesomeDashBoard": "node_modules/.bin/cypress run --reporter mochawesome --headed --record --key e222aeb4-580b-498b-b717-a205f7f36616"
+  },
+  "author": "Kumar Amit Bhabra",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.8.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}

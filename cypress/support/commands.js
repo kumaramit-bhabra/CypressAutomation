@@ -25,6 +25,10 @@ Cypress.Commands.add("selectProductAndAdd", (phoneName) => {
     el.parent(".card-title").parent(".card-body").next(".card-footer").find("button[class='btn btn-info']").click();
     }
     })
+
+    Cypress.Screenshot.defaults({
+        disableTimersAndAnimations: false
+      })
 })
 
 

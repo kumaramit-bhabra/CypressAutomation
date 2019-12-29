@@ -6,8 +6,8 @@
   "scripts": {
     "runTCWOTestRunner": "node_modules/.bin/cypress run",
     "openTestRunner": "node_modules/.bin/cypress open",
-    "runTCHeadedMode": "npm run runTCWOTestRunner -- --headed --browser chrome",
-    "runTCHeadlessMode": "npm run runTCWOTestRunner -- --browser chrome --no-sandbox --headless",
+    "runTCHeadedMode": "npm run runTCWOTestRunner -- --browser chrome",
+    "runTCHeadlessMode": "node_modules/.bin/cypress run --browser chrome --headless",
     "runTCHeadedWithDashBoard": "npm run runTCWOTestRunner -- --headed --record --key e222aeb4-580b-498b-b717-a205f7f36616",
     "runTCWithMochaAwesomeDashBoard": "npm run runTCWOTestRunner -- --reporter mochawesome --headed --record --key e222aeb4-580b-498b-b717-a205f7f36616"
   },

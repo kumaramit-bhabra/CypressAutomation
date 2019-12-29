@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2019-12-28T21:46:34.742Z",
-    "end": "2019-12-28T21:46:54.088Z",
-    "duration": 19346,
+    "start": "2019-12-28T21:47:09.530Z",
+    "end": "2019-12-28T21:47:36.851Z",
+    "duration": 27321,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "11df39bf-9bfe-4be0-9a40-e92d7f257f06",
+      "uuid": "99ac44ba-ef0e-47e0-8889-b2b65856b046",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,40 +27,40 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8dfc992b-a74c-4e93-8f83-903c2f914811",
-          "title": "Place Order",
+          "uuid": "ec9f0c54-97ce-4224-a5a8-c6e44574d7b9",
+          "title": "How we can interact with Web Elements",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Place Order by selecting couple of products",
-              "fullTitle": "Place Order Place Order by selecting couple of products",
+              "title": "Handling Child tab w/o removeAttr",
+              "fullTitle": "How we can interact with Web Elements Handling Child tab w/o removeAttr",
               "timedOut": null,
-              "duration": 13098,
+              "duration": 21110,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get(\"input.search-keyword\").type(\"ca\");\ncy.wait(2000); //select couple of products\ncy.get('div.products').find(\"div.product\").each(function (el, index, $list) {\n  var vegName = el.find(\".product-name\").text();\n  cy.log(vegName);\n  if (vegName.includes('Cauliflower')) {\n    //This is to change the value with in a text box\n    //cy.log(el.find(\".quantity\").val(2));\n    el.find(\"div.stepper-input\").find(\".increment\")[0].click();\n    el.find('button[type=\"button\"]').click();\n  }\n});\ncy.get(\"img[src ='./images/bag.png']\").click();\ncy.contains(\"PROCEED TO CHECKOUT\").click();",
+              "code": "cy.visit(\"http://qaclickacademy.com/practice.php/\"); //  cy.get(\"#opentab\").then(function(el){\n//      var url = el.prop(\"href\");\n//      cy.log(url);\n//      cy.visit(url);\n//  });\ncy.get(\"#opentab\").invoke('removeAttr', 'target').click();",
               "err": {},
-              "uuid": "dc3ae97f-6e07-479d-b95e-7683318a4d27",
-              "parentUUID": "8dfc992b-a74c-4e93-8f83-903c2f914811",
+              "uuid": "7b0ccfba-e410-4261-b12e-eeee04cc1be7",
+              "parentUUID": "ec9f0c54-97ce-4224-a5a8-c6e44574d7b9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dc3ae97f-6e07-479d-b95e-7683318a4d27"
+            "7b0ccfba-e410-4261-b12e-eeee04cc1be7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13098,
+          "duration": 21110,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
